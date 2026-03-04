@@ -1,5 +1,5 @@
 function* numGenerator(max) {
-  min = 1;
+  let min = 1;
   while (true) {
     let randNum = Math.round(Math.random() * (max - min + 1)) + min;
     yield randNum;
@@ -18,4 +18,4 @@ function smth(iterator, timeout) {
 const numGen = numGenerator(100);
 smth(numGen, 25);
 
-module.exports = { numGenerator, smth };
+export { numGenerator, smth };

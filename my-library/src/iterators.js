@@ -24,4 +24,4 @@ function smth2(iterator, timeout) {
 const numGen = iterator(100);
 smth2(numGen, 25);
 
-module.exports = { iterator, smth2 };
+export { iterator, smth2 };
